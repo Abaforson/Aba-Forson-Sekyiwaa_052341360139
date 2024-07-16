@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentecost</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            flex-wrap: wrap;
+            background: rgb(7, 1, 26);
+            padding: 10px;
+        }
+
+        .header {
+            position: fixed;
+            padding: 20px;
+            margin-left: 40px;
+            width: 95%;
+            height: 65px;
+            background: coral;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background: white;
+            border-radius: 50% 50% 1px 1px;
+        }
+
+        .header ul li{
+            padding: 10px 80px;
+            border: 2px solid white;
+            border-radius: 30px;
+            list-style: none;
+        }
+        .header ul li:hover{
+            background: white;
+            transition: .5s;
+        }
+        .header ul li a{
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bolder;
+            color: white;
+        }
+        .header ul li a:hover{
+            color: black;
+            transition: .3s;
+        }
+
+        .content-container {
+            margin-top: 200px;
+        }
+        .content-element{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .dov:hover {
+            opacity: 0.7;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            color: white;
+        }
+        .welcome-message {
+            max-width: 700px;
+            height: auto;
+        }
+        .welcome-container .welcome-message h1{
+            font-size: 80px;
+            font-weight: bold;
+        } 
+        .welcome-container .welcome-message h2 {
+            font-size: 60px;
+        }
+        .welcome-container .welcome-message p{
+            font-size: 20px;
+            color: coral;
+        }
+
+        .welcome-container .buttons {
+            width: 60%;
+            height: 50px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .welcome-container .buttons p{
+            height: 100%;
+            width: 200px;
+            background: coral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .welcome-container .buttons p:hover{
+            opacity: .5;
+            transition: .5s;
+        }
+        .welcome-container .buttons p a{
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <header class="header">
+            <div class="logo">
+                <img src="images.jpeg" alt="Pent logo" width="50px" height="50px" style="border-radius: 50%;">
+                <h1>THE CHURCH OF PENTECOST</h1>
+            </div>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </header>
+
+        <div class="content-container">
+            <div class="content-element">
+                <div class="dov">
+                    <img src="dove.png" alt="Dove">
+                </div>
+                <div class="welcome-container">
+                    <div class="welcome-message">
+                        <h1>Welcome to,</h1>
+                        <h2>The chuch of Pentecost</h2>
+                        <p> We have seasoned counsellors online ready to give you any assistance you may need. Let's chat</p>
+                    </div>
+    
+                    <div class="buttons">
+                        <p><a href="login.html">Login</a></p>
+                        <p><a href="login.html">Let's chat</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

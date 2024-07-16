@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentecost -Sign-up</title>
+
+    <style>
+       body{
+            background: url(prayers.jpg);
+        }
+        .sign-up{
+            padding: 100px;
+            margin: 200px;
+            height: 500px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            background: rgb(7, 1, 26);
+        }
+        .forms-sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+
+
+
+        .head {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .head h1{
+            font-size: 60px;
+            color: white;
+        }
+        .head p{
+            font-size: 30px;
+            color: coral;
+        }
+        .head p a{
+            text-decoration: none;
+        }
+
+        .input-group{
+            display: flex;
+            flex-direction: column;
+        }
+        .input-field{
+            height: 50px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        span{
+            color: white;
+        }
+        .submit-btn {
+            height: 40px;
+            width: 200px;
+            align-self: center;
+            border-radius: 30px;
+            border: 1px solid coral;
+        }
+        .submit-btn:hover {
+            box-shadow: 1px 2px 2px 1px coral;
+        }
+        .submit-btn a{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <section class="sign-up">
+        <div class="forms-section">
+            <div class="head">
+                <h1>SIGN UP</h1>
+                <p>Already have an account? <a href="login.html">login here.</a></p>
+            </div>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User id" required>
+                <input type="email" class="input-field" placeholder="Email id" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <p><input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span></p>
+                <button type="submit" class="submit-btn"><a href="home.html">Register</a></button>
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>
